@@ -204,7 +204,7 @@ def TrackImages():
     recognizer = cv2.face.LBPHFaceRecognizer_create()  # cv2.createLBPHFaceRecognizer()
     recognizer.read("TrainingImageLabel\Trainner.yml")
     harcascadePath = "haarcascade_frontalface_default.xml"
-    faceCascade = cv2.CascadeClassifier(harcascadePath);
+    faceCascade = cv2.CascadeClassifier(harcascadePath)
     df = pd.read_csv("StudentDetails\StudentDetails.csv")
     cam = cv2.VideoCapture(0)
     font = cv2.FONT_HERSHEY_SIMPLEX
